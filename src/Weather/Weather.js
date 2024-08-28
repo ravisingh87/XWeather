@@ -31,7 +31,7 @@ const Weather = () => {
   };
 
   const handleFetch = async (e) => {
-    e.preventDefault();
+    // e.preventDefault();
     setIsLoading(true);
     try {
       const res = await fetch(
@@ -63,7 +63,7 @@ const Weather = () => {
 
   return (
     <div className='weather-cards-container'>
-      <form onSubmit={handleFetch}>
+      <div>
         <input
           className='weather-search'
           type='text'
@@ -73,8 +73,10 @@ const Weather = () => {
           name='search'
           onChange={debounce((e) => handleChange(e.target.value), 2000)}
         />
-        <button className='submit-btn'>Search</button>
-      </form>
+        <button className='submit-btn' onClick={handleFetch}>
+          Search
+        </button>
+      </div>
       <div className='weather-cards'>
         {isLoading ? (
           <p>Loading data...</p>
