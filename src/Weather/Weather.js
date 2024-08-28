@@ -19,16 +19,16 @@ const Weather = () => {
     setSearchText(val);
   };
 
-  const debounce = (fn, delay) => {
-    if (timer) {
-      clearTimeout(timer);
-    }
-    return (args) => {
-      timer = setTimeout(() => {
-        fn(args);
-      }, delay);
-    };
-  };
+  //   const debounce = (fn, delay) => {
+  //     if (timer) {
+  //       clearTimeout(timer);
+  //     }
+  //     return (args) => {
+  //       timer = setTimeout(() => {
+  //         fn(args);
+  //       }, delay);
+  //     };
+  //   };
 
   const handleFetch = async (e) => {
     // e.preventDefault();
@@ -71,7 +71,8 @@ const Weather = () => {
           required
           autoFocus
           name='search'
-          onChange={debounce((e) => handleChange(e.target.value), 2000)}
+          //   onChange={debounce((e) => handleChange(e.target.value), 2000)}
+          onChange={(e) => handleChange(e.target.value)}
         />
         <button className='submit-btn' onClick={handleFetch}>
           Search
