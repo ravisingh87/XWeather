@@ -39,8 +39,14 @@ const Weather = () => {
       );
       if (res.status !== 200) {
         // const error = await res.json();
-        alert("Failed to fetch weather data");
         setIsLoading(false);
+        alert("Failed to fetch weather data");
+        setData({
+          temperature: "",
+          humidity: "",
+          condition: "",
+          windSpeed: "",
+        });
       }
       const jsonData = await res.json();
       setData({
