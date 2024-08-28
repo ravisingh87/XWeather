@@ -2,7 +2,7 @@ import React from "react";
 import "./Card.css";
 const Card = ({ title, data, type }) => {
   return (
-    <div className='card_container'>
+    <div className='weather-card'>
       <p>
         <b>{title}</b>
       </p>

@@ -75,7 +75,7 @@ const Weather = () => {
         />
         <button className='submit-btn'>Search</button>
       </form>
-      <div className='weather-card'>
+      <div className='weather-card-container'>
         {isLoading ? (
           <p>Loading data...</p>
         ) : (

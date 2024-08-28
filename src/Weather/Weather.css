@@ -31,7 +31,7 @@
   color: #ffffff;
   font-size: 15px;
 }
-.weather-card {
+.weather-card-container {
   width: 100%;
   display: flex;
   gap: 10px;
