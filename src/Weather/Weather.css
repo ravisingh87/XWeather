@@ -1,4 +1,4 @@
-.weather-cards {
+.weather-cards-container {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -31,7 +31,7 @@
   color: #ffffff;
   font-size: 15px;
 }
-.weather-card-container {
+.weather-cards {
   width: 100%;
   display: flex;
   gap: 10px;

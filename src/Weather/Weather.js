@@ -62,7 +62,7 @@ const Weather = () => {
   };
 
   return (
-    <div className='weather-cards'>
+    <div className='weather-cards-container'>
       <form onSubmit={handleFetch}>
         <input
           className='weather-search'
@@ -75,7 +75,7 @@ const Weather = () => {
         />
         <button className='submit-btn'>Search</button>
       </form>
-      <div className='weather-card-container'>
+      <div className='weather-cards'>
         {isLoading ? (
           <p>Loading data...</p>
         ) : (
