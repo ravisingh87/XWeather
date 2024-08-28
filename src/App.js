@@ -3,7 +3,7 @@ import "./App.css";
 import Weather from "./Weather/Weather";
 const App = () => {
   return (
-    <div className='container'>
+    <div className='app_container'>
       <Weather />
     </div>
   );
