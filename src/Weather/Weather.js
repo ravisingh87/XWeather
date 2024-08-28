@@ -60,7 +60,7 @@ const Weather = () => {
       <form onSubmit={handleFetch}>
         <input
           className='weather-search'
-          type='search'
+          type='text'
           autoComplete='off'
           required
           autoFocus
